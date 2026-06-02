@@ -1,5 +1,6 @@
 import React , {Component} from "react";
-import "../styles/App.css"
+import "../styles/App.css";
+import HelloWorld from "./HelloWorld.js";
 
 class App extends Component{
     render(){
@@ -8,20 +9,13 @@ class App extends Component{
                 <h1>
                     My React App!
                 </h1>
+                <HelloWorld /> 
             </div>
-            );
+            )
     }
 }
 
-function helloWorld(){
-    return (
-        <div>
-            Hello,World
-        </div>
-    )
-}
-
-export default helloWorld;
+export default App;
 
 class Person{
     constructor(name,age){
