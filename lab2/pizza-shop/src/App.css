@@ -1,0 +1,316 @@
+/* Global Custom Styles for Pizza House */
+
+body {
+  background-color: #2b2b2b !important;
+  color: #f8f9fa !important;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-dark-theme {
+  background-color: #2b2b2b;
+  min-height: 100vh;
+}
+
+/* Serif Typography for brand and headings */
+.brand-serif {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.section-title, .form-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+/* Navbar Custom Styling */
+.bg-dark-custom {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid #333;
+}
+
+.navbar-brand.brand-serif {
+  font-size: 1.6rem;
+  color: #fff !important;
+  
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+/* Navbar Search Group */
+.navbar-search-group {
+  display: flex;
+  align-items: center;
+  width: 350px;
+    margin-right: 100px;
+}
+
+.search-input {
+  border-radius: 3px !important;
+  border: 1px solid #fff;
+  background-color: #fff !important;
+  color: #000 !important;
+  height: 38px;
+  font-size: 0.9rem;
+  width: 500px;
+
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+.btn-search-red {
+  background-color: #d61a29 !important;
+  border: 1px solid #d61a29 !important;
+  border-radius: 3px !important;
+  height: 38px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-search-red:hover {
+  background-color: #b0121f !important;
+}
+
+/* Hero Carousel Styling */
+#pizzaCarousel {
+  width: 100%;
+}
+
+.carousel-image-container {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+.carousel-caption-overlay h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption-overlay p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+  color: #e0e0e0 !important;
+}
+
+/* Slider Controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 8%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Custom indicators */
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.pizza-card {
+  background-color: #ffffff !important;
+  overflow: hidden;
+  border-radius: 4px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pizza-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.pizza-card-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Yellow badge (SALE/NEW) */
+.badge-custom-yellow {
+  top: 10px;
+  left: 10px;
+  background-color: #ffd700;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  border-radius: 2px;
+}
+
+/* Price Tags styling */
+.price-container {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.price-container .text-muted {
+  font-size: 0.85rem;
+}
+
+.price-sale-active {
+  color: #ff9f1c;
+  font-weight: 700;
+}
+
+/* Dark Buy Button */
+.btn-buy-dark {
+  background-color: #2b303a !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 3px !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+.btn-buy-dark:hover {
+  background-color: #1a1e26 !important;
+}
+
+/* Book Your Table Section & Form */
+.book-table-section {
+  border-top: 1px solid #444;
+}
+
+.booking-form {
+  max-width: 960px;
+  margin-top: 0rem;
+}
+
+.booking-input, .booking-textarea {
+  border-radius: 4px !important;
+  border: 1px solid #ccc !important;
+  padding: 10px 15px !important;
+  font-size: 0.95rem;
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+.booking-input::placeholder, .booking-textarea::placeholder {
+  color: #999999;
+}
+
+.booking-input:focus, .booking-textarea:focus {
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25) !important;
+}
+
+select.booking-input {
+  height: 46px;
+  color: #999999 !important;
+}
+
+select.booking-input option {
+  color: #333333;
+}
+
+.booking-textarea {
+  margin-top: 24px;
+  resize: none;
+  
+}
+
+
+.btn-send-message {
+  background-color: #ffc107 !important;
+  color: #ffffff !important;
+  border: 1px solid #ffc107 !important;
+  border-radius: 2px !important;
+  font-size: 0.95rem;
+  padding: 10px 24px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-send-message:hover {
+  background-color: #e0a800 !important;
+  border-color: #d39e00 !important;
+  color: #000 !important;
+}
+
+
+footer {
+  background-color: #1a1a1a !important;
+  border-top: 1px solid #333;
+  color: #aaa !important;
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustment */
+@media (max-width: 991px) {
+  .search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image-container {
+    height: 300px;
+  }
+  .carousel-caption-overlay h2 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption-overlay p {
+    font-size: 0.9rem;
+  }
+  .section-title, .form-section-title {
+    font-size: 1.75rem;
+  }
+}
